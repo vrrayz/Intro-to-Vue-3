@@ -19,6 +19,9 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <p v-if="onSale">This product is on sale</p>
+            <p v-else-if="onHold">This product is on hold</p>
+            <p v-else>Omo i no sabi</p>
           </div>
         </div>
       </div>
